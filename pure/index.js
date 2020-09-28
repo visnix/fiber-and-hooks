@@ -106,13 +106,13 @@ function App(props) {
     React.createElement(
       "section",
       null,
-      React.createElement("h2", null, "\u51FD\u6570\u7EC4\u4EF61"),
+      React.createElement("h2", null, "函数组件1"),
       React.createElement(Count, null),
       React.createElement("hr", null),
-      React.createElement("h2", null, "\u51FD\u6570\u7EC4\u4EF62"),
+      React.createElement("h2", null, "函数组件2"),
       React.createElement(Count3, null),
       React.createElement("hr", null),
-      React.createElement("h2", null, "Class\u7EC4\u4EF6"),
+      React.createElement("h2", null, "Class组件"),
       React.createElement(Count4, null)
     )
   );

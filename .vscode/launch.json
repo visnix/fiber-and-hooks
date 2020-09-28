@@ -5,11 +5,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch copy",
+      "name": "Launch pure",
       "request": "launch",
       "type": "chrome",
       "url": "http://localhost:9878",
-      "webRoot": "${workspaceFolder}/copy"
+      "webRoot": "${workspaceFolder}/pure"
     },
     {
       "name": "Launch Program",
