@@ -55,6 +55,8 @@ function render(vDom, container) {
   if(vDom.props && vDom.props.children && vDom.props.children.length) {
     vDom.props.children.forEach(child => render(child, dom))
   }
+
+  container.appendChild(dom)
 }
 
-render(App)
+render(App, document.getElementById('root'))
