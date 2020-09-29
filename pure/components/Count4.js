@@ -1,4 +1,4 @@
-import React from './myReact/index.js';
+import React from '../mini-react.js';
 
 class Count4 extends React.Component {
   constructor(props) {

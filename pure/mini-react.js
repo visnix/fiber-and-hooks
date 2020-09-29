@@ -128,7 +128,8 @@ let currentRoot = null;
 let deletions = null;
 // workLoop用来调度任务
 function workLoop(deadline) {
-  while(nextUnitOfWork && deadline.timeRemaining() > 1) {
+  const remainedTime = deadline.timeRemaining()
+  while(nextUnitOfWork && remainedTime > 1) {
     // 这个while循环会在任务执行完或者时间到了的时候结束
     nextUnitOfWork = performUnitOfWork(nextUnitOfWork);
   }
@@ -159,7 +160,7 @@ function reconcileChildren(workInProgressFiber, elements) {
   let prevSibling = null;
   let index = 0;
   if(elements && elements.length) {
-    // 第一次没有oldFiber，那全部是REPLACEMENT
+    // 第一次没有oldFiber，那全部是replacement
     if(!oldFiber) {
       for(let i = 0; i < elements.length; i++) {
         const element = elements[i];
